@@ -46,6 +46,6 @@ Contribuições são bem-vindas! Por favor, leia as diretrizes de contribuição
 
 ## Contato
 
-[Michael Bullet - [bulletdev@gmail.com]
+Michael Bullet - [bulletdev@gmail.com]
 
-Link do projeto: [https://github.com/seu-usuario/Assistente-virtual](https://github.com/bulletdev/Assistente-virtual)
+Link do projeto: (https://github.com/bulletdev/Assistente-virtual)
