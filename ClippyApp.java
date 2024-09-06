@@ -68,7 +68,7 @@ public class ClippyApp {
     private static JPanel createAssistantPanel() {
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBackground(new Color(230, 230, 250)); // Lavender
-        panel.setBorder(BorderFactory.createLineBorder(new Color(147, 112, 219), 2)); // Medium Purple
+        panel.setBorder(BorderFactory.createLineBorder(new Color(147, 112, 219), 2)); 
         panel.setPreferredSize(new Dimension(200, 0));
 
         imageLabel = new JLabel(clippyOciosoIcon);
@@ -106,7 +106,7 @@ public class ClippyApp {
 
         JScrollPane scrollPane = new JScrollPane(resultArea);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollPane.setBorder(BorderFactory.createLineBorder(new Color(230, 230, 250), 1)); // Lavender
+        scrollPane.setBorder(BorderFactory.createLineBorder(new Color(230, 230, 250), 1)); 
 
         JPanel inputPanel = new JPanel(new BorderLayout(10, 0));
         inputPanel.setBackground(Color.WHITE);
@@ -115,7 +115,7 @@ public class ClippyApp {
         searchField = new JTextField();
         searchField.setFont(new Font("Arial", Font.PLAIN, 14));
         searchField.setBorder(BorderFactory.createCompoundBorder(
-            BorderFactory.createLineBorder(new Color(147, 112, 219), 1), // Medium Purple
+            BorderFactory.createLineBorder(new Color(147, 112, 219), 1), 
             BorderFactory.createEmptyBorder(5, 5, 5, 5)
         ));
 
@@ -177,7 +177,7 @@ public class ClippyApp {
 
     private static String sendChatGPTRequest(String query) {
         String responseText = "";
-        int maxRetries = 5; // Aumentado para 5 tentativas
+        int maxRetries = 5; 
         int retryCount = 0;
 
         while (retryCount < maxRetries) {
