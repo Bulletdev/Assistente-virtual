@@ -9,11 +9,23 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URI;
 import org.json.JSONObject;
+import java.io.FileInputStream;
+import java.util.Properties;
 
 public class ClippyApp {
 
-    private static final String API_KEY = "\r\n" + //
-                " "; //sua chave api
+    private static String API_KEY;
+
+    static {
+        try (FileInputStream fis = new FileInputStream("config.properties")) {
+            Properties prop = new Properties();
+            prop.load(fis);
+            API_KEY = prop.getProperty("OPENAI_API_KEY");
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Falha ao carregar a chave API. Verifique se o arquivo config.properties existe e contém a chave OPENAI_API_KEY.");
+        }
+    }
 
     private static final String CLIPPY_OCIOSO = "clippy_idle.gif";
     private static final String CLIPPY_PESQUISANDO = "clippy_searching.gif";

@@ -1,3 +1,14 @@
+
+ ## Configuração
+
+   1. Crie um arquivo chamado `config.properties` na raiz do projeto.
+   2. Adicione sua chave API da OpenAI ao arquivo no seguinte formato:
+      
+      OPENAI_API_KEY=sua_chave_api_aqui
+
+   3. Não compartilhe este arquivo ou inclua-o no controle de versão.
+
+
 # Assistente Virtual
 
 Este é um assistente virtual desenvolvido em Java que utiliza a API do ChatGPT para fornecer respostas interativas aos usuários.
