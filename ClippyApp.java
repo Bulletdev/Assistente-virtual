@@ -13,7 +13,7 @@ import org.json.JSONObject;
 public class ClippyApp {
 
     private static final String API_KEY = "\r\n" + //
-                "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"; 
+                " "; //sua chave api
 
     private static final String CLIPPY_OCIOSO = "clippy_idle.gif";
     private static final String CLIPPY_PESQUISANDO = "clippy_searching.gif";
